@@ -1,5 +1,8 @@
 # Multithreaded-Chat
+##Description
+Chats uses sockets and threads. Server keeps listening for new connections, and when a new client arrives, a new thread is created, which receives messages from this client and sends this message to all connected clients.
 
+##Make
 ```
 >$ make
 g++ -Wall -g  -c src/server_main.cpp -o obj/server_main.o
@@ -20,7 +23,7 @@ Server start
 Run client
 
 ```
->$ ./bin/server
-Server start
+>$ ./bin/client
+Please enter your nickname: 
 
 ```
